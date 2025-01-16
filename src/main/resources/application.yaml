@@ -14,3 +14,10 @@ spring:
       ddl-auto: update
     show-sql: true
     open-in-view: false
+
+  kafka:
+    bootstrap-servers:
+      localhost:9093
+    consumer:
+      group-id: storage-group
+      auto-offset-reset: earliest
